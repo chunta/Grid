@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Grid
+
+  Created by ChunTa Chen on 5/13/17.
+  Copyright © 2017 ChunTa Chen. All rights reserved.
+*/
+"OffVisualGuidance" = "關閉Grid視覺輔助";
+"OnVisualGuidance" = "開啟Grid視覺輔助";
+"Grid2x2" = "切換到2x2格規劃";
+"Grid3x3" = "切換到3x3格規劃";
+"Quit" = "結束";

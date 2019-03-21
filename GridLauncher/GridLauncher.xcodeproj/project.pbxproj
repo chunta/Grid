@@ -1,0 +1,551 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184008931ED4787500C45CFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008921ED4787500C45CFA /* AppDelegate.m */; };
+		184008961ED4787500C45CFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008951ED4787500C45CFA /* main.m */; };
+		1840089B1ED4787500C45CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1840089A1ED4787500C45CFA /* Assets.xcassets */; };
+		184008AF1ED4798F00C45CFA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008AE1ED4798F00C45CFA /* Cocoa.framework */; };
+		184008B11ED4799500C45CFA /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008B01ED4799500C45CFA /* ServiceManagement.framework */; };
+		184008BA1ED47A6100C45CFA /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184008B91ED47A6100C45CFA /* Application.xib */; };
+		A8C523191FC9232100D68A31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008951ED4787500C45CFA /* main.m */; };
+		A8C5231A1FC9232100D68A31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008921ED4787500C45CFA /* AppDelegate.m */; };
+		A8C5231C1FC9232100D68A31 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008B01ED4799500C45CFA /* ServiceManagement.framework */; };
+		A8C5231D1FC9232100D68A31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008AE1ED4798F00C45CFA /* Cocoa.framework */; };
+		A8C5231F1FC9232100D68A31 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184008B91ED47A6100C45CFA /* Application.xib */; };
+		A8C523201FC9232100D68A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1840089A1ED4787500C45CFA /* Assets.xcassets */; };
+		A8C523281FC927A900D68A31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008951ED4787500C45CFA /* main.m */; };
+		A8C523291FC927A900D68A31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 184008921ED4787500C45CFA /* AppDelegate.m */; };
+		A8C5232B1FC927A900D68A31 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008B01ED4799500C45CFA /* ServiceManagement.framework */; };
+		A8C5232C1FC927A900D68A31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184008AE1ED4798F00C45CFA /* Cocoa.framework */; };
+		A8C5232E1FC927A900D68A31 /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184008B91ED47A6100C45CFA /* Application.xib */; };
+		A8C5232F1FC927A900D68A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1840089A1ED4787500C45CFA /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1840088E1ED4787500C45CFA /* GridLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		184008911ED4787500C45CFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		184008921ED4787500C45CFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		184008951ED4787500C45CFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1840089A1ED4787500C45CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1840089F1ED4787500C45CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184008A51ED4789E00C45CFA /* GridLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridLauncher.entitlements; sourceTree = "<group>"; };
+		184008AE1ED4798F00C45CFA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		184008B01ED4799500C45CFA /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		184008B91ED47A6100C45CFA /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
+		A8C523241FC9232100D68A31 /* GridLauncher-uat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GridLauncher-uat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C523251FC9232200D68A31 /* Info-uat.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-uat.plist"; path = "/Users/chenrex/Repo/Grid/GridLauncher/GridLauncher/Info-uat.plist"; sourceTree = "<absolute>"; };
+		A8C523331FC927A900D68A31 /* GridLauncher-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GridLauncher-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C523341FC927AA00D68A31 /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "/Users/chenrex/Repo/Grid/GridLauncher/GridLauncher/Info-dev.plist"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1840088B1ED4787500C45CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184008B11ED4799500C45CFA /* ServiceManagement.framework in Frameworks */,
+				184008AF1ED4798F00C45CFA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C5231B1FC9232100D68A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C5231C1FC9232100D68A31 /* ServiceManagement.framework in Frameworks */,
+				A8C5231D1FC9232100D68A31 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C5232A1FC927A900D68A31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C5232B1FC927A900D68A31 /* ServiceManagement.framework in Frameworks */,
+				A8C5232C1FC927A900D68A31 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184008851ED4787500C45CFA = {
+			isa = PBXGroup;
+			children = (
+				184008901ED4787500C45CFA /* GridLauncher */,
+				1840088F1ED4787500C45CFA /* Products */,
+				184008AD1ED4798F00C45CFA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1840088F1ED4787500C45CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1840088E1ED4787500C45CFA /* GridLauncher.app */,
+				A8C523241FC9232100D68A31 /* GridLauncher-uat.app */,
+				A8C523331FC927A900D68A31 /* GridLauncher-dev.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184008901ED4787500C45CFA /* GridLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				184008A51ED4789E00C45CFA /* GridLauncher.entitlements */,
+				184008911ED4787500C45CFA /* AppDelegate.h */,
+				184008921ED4787500C45CFA /* AppDelegate.m */,
+				A8C523341FC927AA00D68A31 /* Info-dev.plist */,
+				A8C523251FC9232200D68A31 /* Info-uat.plist */,
+				1840089F1ED4787500C45CFA /* Info.plist */,
+				1840089A1ED4787500C45CFA /* Assets.xcassets */,
+				184008B91ED47A6100C45CFA /* Application.xib */,
+				184008941ED4787500C45CFA /* Supporting Files */,
+			);
+			path = GridLauncher;
+			sourceTree = "<group>";
+		};
+		184008941ED4787500C45CFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				184008951ED4787500C45CFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		184008AD1ED4798F00C45CFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				184008B01ED4799500C45CFA /* ServiceManagement.framework */,
+				184008AE1ED4798F00C45CFA /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1840088D1ED4787500C45CFA /* GridLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184008A21ED4787500C45CFA /* Build configuration list for PBXNativeTarget "GridLauncher" */;
+			buildPhases = (
+				1840088A1ED4787500C45CFA /* Sources */,
+				1840088B1ED4787500C45CFA /* Frameworks */,
+				1840088C1ED4787500C45CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GridLauncher;
+			productName = GridLauncher;
+			productReference = 1840088E1ED4787500C45CFA /* GridLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8C523171FC9232100D68A31 /* GridLauncher-uat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C523211FC9232100D68A31 /* Build configuration list for PBXNativeTarget "GridLauncher-uat" */;
+			buildPhases = (
+				A8C523181FC9232100D68A31 /* Sources */,
+				A8C5231B1FC9232100D68A31 /* Frameworks */,
+				A8C5231E1FC9232100D68A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GridLauncher-uat";
+			productName = GridLauncher;
+			productReference = A8C523241FC9232100D68A31 /* GridLauncher-uat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A8C523261FC927A900D68A31 /* GridLauncher-dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8C523301FC927A900D68A31 /* Build configuration list for PBXNativeTarget "GridLauncher-dev" */;
+			buildPhases = (
+				A8C523271FC927A900D68A31 /* Sources */,
+				A8C5232A1FC927A900D68A31 /* Frameworks */,
+				A8C5232D1FC927A900D68A31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GridLauncher-dev";
+			productName = GridLauncher;
+			productReference = A8C523331FC927A900D68A31 /* GridLauncher-dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		184008861ED4787500C45CFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "ChunTa Chen";
+				TargetAttributes = {
+					1840088D1ED4787500C45CFA = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 6P7LJS7G56;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					A8C523171FC9232100D68A31 = {
+						DevelopmentTeam = 6P7LJS7G56;
+						ProvisioningStyle = Manual;
+					};
+					A8C523261FC927A900D68A31 = {
+						DevelopmentTeam = 6P7LJS7G56;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 184008891ED4787500C45CFA /* Build configuration list for PBXProject "GridLauncher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 184008851ED4787500C45CFA;
+			productRefGroup = 1840088F1ED4787500C45CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8C523261FC927A900D68A31 /* GridLauncher-dev */,
+				A8C523171FC9232100D68A31 /* GridLauncher-uat */,
+				1840088D1ED4787500C45CFA /* GridLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1840088C1ED4787500C45CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184008BA1ED47A6100C45CFA /* Application.xib in Resources */,
+				1840089B1ED4787500C45CFA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C5231E1FC9232100D68A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C5231F1FC9232100D68A31 /* Application.xib in Resources */,
+				A8C523201FC9232100D68A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C5232D1FC927A900D68A31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C5232E1FC927A900D68A31 /* Application.xib in Resources */,
+				A8C5232F1FC927A900D68A31 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1840088A1ED4787500C45CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184008961ED4787500C45CFA /* main.m in Sources */,
+				184008931ED4787500C45CFA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C523181FC9232100D68A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C523191FC9232100D68A31 /* main.m in Sources */,
+				A8C5231A1FC9232100D68A31 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8C523271FC927A900D68A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C523281FC927A900D68A31 /* main.m in Sources */,
+				A8C523291FC927A900D68A31 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		184008A01ED4787500C45CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		184008A11ED4787500C45CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		184008A31ED4787500C45CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Mildgrind Co., Ltd. (6P7LJS7G56)";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
+				INFOPLIST_FILE = GridLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.LaunchAtLoginHelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b67958a4-a0c2-491e-a252-04703398d205";
+				PROVISIONING_PROFILE_SPECIFIER = GridLauncher;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		184008A41ED4787500C45CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Mildgrind Co., Ltd. (6P7LJS7G56)";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
+				INFOPLIST_FILE = GridLauncher/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mildgrind.LaunchAtLoginHelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2dea355b-203f-447a-94a7-a3d22e5988b3";
+				PROVISIONING_PROFILE_SPECIFIER = GridLauncher;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A8C523221FC9232100D68A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"UAT=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GridLauncher/info-uat.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mildgrind.LaunchAtLoginHelperApp-uat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "732bf303-3f8e-477e-a505-1713390c7549";
+				PROVISIONING_PROFILE_SPECIFIER = GridLauncherUAT;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A8C523231FC9232100D68A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
+				GCC_PREPROCESSOR_DEFINITIONS = "UAT=1";
+				INFOPLIST_FILE = "$(SRCROOT)/GridLauncher/info-uat.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mildgrind.LaunchAtLoginHelperApp-uat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "732bf303-3f8e-477e-a505-1713390c7549";
+				PROVISIONING_PROFILE_SPECIFIER = GridLauncherUAT;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A8C523311FC927A900D68A31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"DEV=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/GridLauncher/Info-dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mildgrind.LaunchAtLoginHelperApp-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f0591803-3e0c-4ffd-81ef-2410c32b899e";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A8C523321FC927A900D68A31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = GridLauncher/GridLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 6P7LJS7G56;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEV=1";
+				INFOPLIST_FILE = "$(SRCROOT)/GridLauncher/Info-dev.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mildgrind.LaunchAtLoginHelperApp-dev";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f0591803-3e0c-4ffd-81ef-2410c32b899e";
+				PROVISIONING_PROFILE_SPECIFIER = GridLauncherDev;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184008891ED4787500C45CFA /* Build configuration list for PBXProject "GridLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184008A01ED4787500C45CFA /* Debug */,
+				184008A11ED4787500C45CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184008A21ED4787500C45CFA /* Build configuration list for PBXNativeTarget "GridLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184008A31ED4787500C45CFA /* Debug */,
+				184008A41ED4787500C45CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C523211FC9232100D68A31 /* Build configuration list for PBXNativeTarget "GridLauncher-uat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C523221FC9232100D68A31 /* Debug */,
+				A8C523231FC9232100D68A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8C523301FC927A900D68A31 /* Build configuration list for PBXNativeTarget "GridLauncher-dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C523311FC927A900D68A31 /* Debug */,
+				A8C523321FC927A900D68A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 184008861ED4787500C45CFA /* Project object */;
+}

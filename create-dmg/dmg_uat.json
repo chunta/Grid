@@ -1,0 +1,12 @@
+{
+  "title": "Grid",
+  "icon": "icon128x128.icns",
+  "background": "background_image.png",
+  "window":{
+	"position":{"x":500,"y":9000}
+  },
+  "contents": [
+    { "x": 392, "y": 147, "type": "link", "path": "/Applications" },
+    { "x": 205, "y": 149, "type": "file", "path": "./source_folder/Grid_UAT.app" }
+  ]
+}

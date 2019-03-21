@@ -1,0 +1,40 @@
+/* 
+  Localization.strings
+  Grid
+
+  Created by ChunTa Chen on 2017/5/14.
+  Copyright © 2017年 ChunTa Chen. All rights reserved.
+*/
+"Visual Guidance" = "视觉辅助";
+"Grid Type" = "型別";
+"Modifer Key" = "修饰键";
+"Arrow Key" = "方向键";
+"Number Key" = "数字键";
+"Expand Window" = "拓展視窗";
+"Move Window" = "移動視窗";
+"Pre/Next Screen" = "上一个 / 下一个萤幕";
+"LeftMidRightScreenWidth" = "左 中 右 萤幕三等分宽";
+"Space" = "空白鍵";
+"Zero" = "0 (零)";
+"Center Window" = "置中視窗";
+"FullScreen" = "全屏";
+"About Mildgrind.com" = "关于 Mildgrind.com";
+"License Agreement" = "使用者条款";
+"OffVisualGuidance" = "關閉Grid視覺輔助";
+"OnVisualGuidance" = "開啟Grid視覺輔助";
+"Grid2x2" = "切換到2x2格規劃";
+"Grid3x3" = "切換到3x3格規劃";
+"Border Color" = "隔线颜色";
+"Cell Color" = "填满";
+"Launch at startup" = "开机自动启动";
+"CheckEULA" = "我接受服务条款之内容";
+"Quit" = "结束";
+"Accept" = "接受";
+"Cancel" = "取消";
+"Update" = "更新";
+"Finish All Steps" = "已完成步骤 ?";
+"Relaunch Grid" = "重启Grid";
+"Relaunch Grid And See Top Menu" = "重启Grid，稍后可以在TopMenu看到格子";
+"Setup Privacy Accessibility" = "设定隐私取用权限";
+"Unlock User Privacy" = "开启使用权限";
+"HintForCustomKey" = "J、K、L、G、0 and Space 为保留按键，无法输入";

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="LaunchToggleWindow">
+            <connections>
+                <outlet property="lhoff2on" destination="tF6-cs-MEx" id="w0f-6t-3Eg"/>
+                <outlet property="lhon2off" destination="4oD-PO-RQd" id="eAX-bt-3PD"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="196" y="240" width="356" height="120"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
+            <view key="contentView" wantsLayer="YES" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="356" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-cs-MEx">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="120"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LaunchOff2On" id="7U1-eA-DwU"/>
+                    </imageView>
+                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4oD-PO-RQd">
+                        <rect key="frame" x="0.0" y="0.0" width="356" height="120"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="LaunchOn2Off" id="c8i-KY-YJN"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4oD-PO-RQd" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="0Qo-ni-bIQ"/>
+                    <constraint firstAttribute="trailing" secondItem="4oD-PO-RQd" secondAttribute="trailing" id="8g0-oq-n8g"/>
+                    <constraint firstAttribute="bottom" secondItem="4oD-PO-RQd" secondAttribute="bottom" id="Ogf-7x-2Ob"/>
+                    <constraint firstAttribute="bottom" secondItem="tF6-cs-MEx" secondAttribute="bottom" id="TsM-6I-RVW"/>
+                    <constraint firstAttribute="trailing" secondItem="tF6-cs-MEx" secondAttribute="trailing" id="bVj-2a-SOX"/>
+                    <constraint firstItem="4oD-PO-RQd" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="lzi-gM-2mq"/>
+                    <constraint firstItem="tF6-cs-MEx" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" id="nxY-E0-9aT"/>
+                    <constraint firstItem="tF6-cs-MEx" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" id="r0h-uW-7CG"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="115"/>
+        </window>
+    </objects>
+    <resources>
+        <image name="LaunchOff2On" width="293" height="120"/>
+        <image name="LaunchOn2Off" width="293" height="120"/>
+    </resources>
+</document>

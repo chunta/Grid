@@ -1,0 +1,110 @@
+//
+//  PrefixHeader.pch
+//  Grid
+//
+//  Created by ChunTa Chen on 5/6/17.
+//  Copyright © 2017 ChunTa Chen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
+#import <Cocoa/Cocoa.h>
+
+#define ENABLE_KEYLOGGER 1
+#if DEV
+#define LauncherAppBundleIdentifier @"com.mildgrind.LaunchAtLoginHelperApp-dev"
+#elif UAT
+#define LauncherAppBundleIdentifier @"com.mildgrind.LaunchAtLoginHelperApp-uat"
+#else
+#define LauncherAppBundleIdentifier @"com.mildgrind.LaunchAtLoginHelperApp"
+#endif
+
+#define TerminateNotification @"TERMINATEHELPER"
+
+#define kGuideLineWidth 2
+#define kGuideTxtSize 30
+
+#define kTopBarHeight 23
+#define kGuideShowDuration 0.3
+#define kCellOccupiedAreaRatio 0.1
+#define kBorderSelectIndex @"kBorderSelectIndex"
+#define kCellSelectIndex @"kCellSelectIndex"
+
+#define kActiveScreenByCursorLoc 0
+
+//Menu/Preference
+#define kToggleVisual @"kToggleVisual"
+#define kToggleVisualGuidanceTag 2
+#define kToggleGridTag 3
+#define kToggleGrid @"kToggleGrid"
+#define kToggleTutorialTag 4
+#define kToggleTutorial @"kToggleTutorial"
+#define kCenterPreW @"kCenterPreW"
+#define kCenterPreH @"kCenterPreH"
+#define kGridColorPicker 5
+#define kPreferenceGrid2 @"2"
+#define kPreferenceGrid3 @"3"
+#define kDefaultPreferenceGrid kPreferenceGrid3
+#define kLaunchAtStartup @"kLaunchAtStartup"
+
+#define kModifier01 @"kModifier01"
+#define kModifier02 @"kModifier02"
+
+#define CustomSetting3x3 @"CustomSetting3x3"
+#define CustomSetting2x2 @"CustomSetting2x2"
+#define kZeroOrSpaceForCenterWindow @"kZeroOrSpaceForCenterWindow"
+
+static NSString* BorderColorsRepo[3] = {@"0xffffff", @"0x91befc", @"0x4be6fd"};
+static NSString* CellColorsRepo[5] = {@"0xfbd45e", @"0xdcf372", @"0xf97c8d", @"0xe770f1", @"0xfd925d"};
+static uint64_t GModifier[4] = {kCGEventFlagMaskControl, kCGEventFlagMaskCommand, kCGEventFlagMaskAlternate, kCGEventFlagMaskShift};
+
+//Registration Key
+#define kRegistrationKey @"kRegistrationKey"
+#define kRegistrationMail @"kRegistrationMail"
+
+#ifndef DEBUG
+#define NSLog(...);
+#endif
+
+//Center Window
+#define kDefault_CenterWindow_Scale_W 1
+#define kDefault_CenterWindow_Scale_H 1
+#define kDefault_Slider_W 80
+#define kDefault_Slider_H 70
+#define kCenterWindow_AvailableValueToScaleDown 54
+#define kDisableCenterHotkey @"kDisableCenterHotkey"
+
+//DB Url
+#define CODE_OK @"0"
+#define CODE_LICENSEKEY_INCORRECT @"1"
+#define CODE_EMAIL_INCORRECT @"2"
+#define CODE_SNO_MISMATCH @"3"
+#define CODE_ORDER_ERROR @"4"
+#define CODE_UNKNOWN_ERROR @"5"
+#define CODE_PINCODE_INCORRECT @"6"
+#define kDBURL @"http://localhost:3000"
+
+//Google Analytic
+#define TID @"UA-12345678"
+#define CID @"618835b1-12345678"
+
+#define DISABLE_ALL 0
+
+//WebService
+#if UAT || DEV
+#define WEBSITE_URL @"http://aaaaa.us-east-1.elasticbeanstalk.com"
+#define OPENING_BANNER_REQUEST_URL @"http://bbbbbb.us-east-1.elasticbeanstalk.com/pullopenningbanner"
+#define BANNER_REQUEST_URL @"http://ccccccc.us-east-1.elasticbeanstalk.com"
+#define VERSION_REQUEST_URL @"http://dddddd.us-east-1.elasticbeanstalk.com/version"
+#define DROPBOXTOKEN_REQUEST_URL @"http://eeeeee.us-east-1.elasticbeanstalk.com/dbtkn"
+#else
+#define WEBSITE_URL @"https://mildgrind.com"
+#define OPENING_BANNER_REQUEST_URL @"https://servermildgrind.com/pullopenningbanner"
+#define BANNER_REQUEST_URL @"https://servermildgrind.com"
+#define VERSION_REQUEST_URL @"https://servermildgrind.com/version"
+#define DROPBOXTOKEN_REQUEST_URL @"https://servermildgrind.com/dbtkn"
+#endif
+
+#endif

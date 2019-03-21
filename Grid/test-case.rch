@@ -1,0 +1,8 @@
+1.沒有Licensekey或Email紀錄 跳出PopOverForm
+2.Licensekey正確但Email不match 跳出InputWindow
+3.Licensekey不正確 跳出InputWindow
+4.Order Error (訂單錯誤) 跳出Alert 重新間隔認證
+5.沒網路/網路逾時 重新開始間隔認證
+6.Order Error (訂單錯誤) 跳出Alert 重新間隔認證
+7.從use preference 認證成功 重新Long間隔認證
+8.從InputForm 認證成功 重新Long間隔認證

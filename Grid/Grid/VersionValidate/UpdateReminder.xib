@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="UpdateReminder">
+            <connections>
+                <outlet property="inlinebtn" destination="2JQ-t5-rAA" id="IO0-sj-dzl"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+                <outlet property="vtxt" destination="5IN-kI-4Uc" id="65h-rf-tMm"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2JQ-t5-rAA">
+                    <rect key="frame" x="8" y="37" width="89" height="17"/>
+                    <buttonCell key="cell" type="inline" title="Update" bezelStyle="inline" imagePosition="left" alignment="center" borderStyle="border" inset="2" id="IyO-vQ-Cyp">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="smallSystemBold"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onUpdate:" target="-2" id="o1X-eG-spn"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-kI-4Uc">
+                    <rect key="frame" x="6" y="13" width="93" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="0.0.1" id="nvq-Hg-b1z">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="5IN-kI-4Uc" firstAttribute="top" secondItem="2JQ-t5-rAA" secondAttribute="bottom" constant="8" id="2xv-db-2ry"/>
+                <constraint firstAttribute="trailing" secondItem="2JQ-t5-rAA" secondAttribute="trailing" constant="8" id="FaM-yF-Fyx"/>
+                <constraint firstItem="5IN-kI-4Uc" firstAttribute="trailing" secondItem="2JQ-t5-rAA" secondAttribute="trailing" id="Wtf-s6-1GF"/>
+                <constraint firstItem="5IN-kI-4Uc" firstAttribute="leading" secondItem="2JQ-t5-rAA" secondAttribute="leading" id="iWG-K8-Xox"/>
+                <constraint firstItem="2JQ-t5-rAA" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="p2Z-ey-RS8"/>
+                <constraint firstItem="2JQ-t5-rAA" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="ppI-Rl-Y30"/>
+            </constraints>
+            <point key="canvasLocation" x="99.5" y="49"/>
+        </customView>
+    </objects>
+</document>

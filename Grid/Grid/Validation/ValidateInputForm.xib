@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ValidateInputForm">
+            <connections>
+                <outlet property="botleftLine" destination="shp-uw-3c6" id="v27-e0-ixk"/>
+                <outlet property="botrightLine" destination="OYL-Vf-pvB" id="y8P-w5-K53"/>
+                <outlet property="closeBtn" destination="ypQ-wG-HWg" id="kXS-Lg-zG8"/>
+                <outlet property="closePincodeBtn" destination="sKr-3J-2nW" id="mnR-ir-C5d"/>
+                <outlet property="confirmPincodeBtn" destination="lLk-Xb-7L7" id="7BE-j2-eH3"/>
+                <outlet property="emailBgView" destination="t8K-70-hQR" id="Pxw-9z-o9u"/>
+                <outlet property="emailTxt" destination="XMd-P5-bmh" id="g44-y8-ULe"/>
+                <outlet property="hintTxt" destination="4Un-8c-dh1" id="dej-7C-aqO"/>
+                <outlet property="lckeyBgView" destination="Ow7-aD-AzC" id="zlu-p0-jM8"/>
+                <outlet property="lckeyTxt" destination="SHd-pf-sIt" id="psw-A5-REM"/>
+                <outlet property="okerrorIcon" destination="AUG-IV-jCS" id="bFn-2s-KfV"/>
+                <outlet property="pincodeInput" destination="XEL-wg-7Pt" id="0UU-D3-gyk"/>
+                <outlet property="pincodeView" destination="OkV-IJ-PBa" id="0DB-Lf-a9s"/>
+                <outlet property="regiBtn" destination="sdg-bN-W8U" id="496-MN-cZt"/>
+                <outlet property="titleTxt" destination="v6l-GW-S3h" id="QCQ-rJ-24I"/>
+                <outlet property="view" destination="c22-O7-iKe" id="CXM-F9-l0i"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe">
+            <rect key="frame" x="0.0" y="0.0" width="246" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sdg-bN-W8U">
+                    <rect key="frame" x="20" y="60" width="206" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" title="Register" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="jaG-1h-W4B">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="14" name="Helvetica"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onRegister:" target="-2" id="CMO-Ep-rO6"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ypQ-wG-HWg">
+                    <rect key="frame" x="20" y="20" width="206" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="square" title="Close" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="MIQ-Jh-QIA">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="14" name="Helvetica"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="onClose:" target="-2" id="Ss8-aw-qZN"/>
+                    </connections>
+                </button>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-70-hQR">
+                    <rect key="frame" x="20" y="142" width="206" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMd-P5-bmh" customClass="ValidateInputTxtField">
+                            <rect key="frame" x="5" y="7" width="197" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" placeholderString="Email" drawsBackground="YES" id="KTa-aR-j2Y">
+                                <font key="font" size="13" name="Helvetica"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="VBB-mG-o70"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </customView>
+                <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ow7-aD-AzC">
+                    <rect key="frame" x="20" y="103" width="206" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHd-pf-sIt" customClass="ValidateInputTxtField">
+                            <rect key="frame" x="5" y="7" width="197" height="19"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" placeholderString="Licensekey" drawsBackground="YES" id="fGh-EG-Sh8">
+                                <font key="font" size="13" name="Helvetica"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="wzF-cq-yhI"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                </customView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v6l-GW-S3h">
+                    <rect key="frame" x="105" y="187" width="37" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Grid" id="5hX-Lz-dQb">
+                        <font key="font" size="18" name="Helvetica-Light"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="AgI-3t-dpN">
+                    <rect key="frame" x="20" y="195" width="72" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="uZZ-NJ-ELW">
+                    <rect key="frame" x="154" y="195" width="72" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <box hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="shp-uw-3c6" userLabel="BotLeft Horizontal Line">
+                    <rect key="frame" x="20" y="-9" width="85" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <box hidden="YES" verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="OYL-Vf-pvB" userLabel="BotRight Horizontal Line">
+                    <rect key="frame" x="141" y="-9" width="85" height="5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                </box>
+                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Un-8c-dh1">
+                    <rect key="frame" x="20" y="-62" width="208" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="Tdb-w3-LoN">
+                        <font key="font" size="14" name="Helvetica"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUG-IV-jCS">
+                    <rect key="frame" x="113" y="-17" width="22" height="22"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="check_icon" id="EgO-m5-4LT"/>
+                </imageView>
+                <customView hidden="YES" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkV-IJ-PBa">
+                    <rect key="frame" x="0.0" y="0.0" width="246" height="225"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sKr-3J-2nW">
+                            <rect key="frame" x="20" y="20" width="206" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="Close" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="HR8-0I-9Ny">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="14" name="Helvetica"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onPincodeClose:" target="-2" id="ZmO-LW-jgA"/>
+                            </connections>
+                        </button>
+                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lLk-Xb-7L7">
+                            <rect key="frame" x="20" y="60" width="206" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <buttonCell key="cell" type="square" title="Confirm" bezelStyle="shadowlessSquare" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="XGY-w3-UEU">
+                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <font key="font" size="14" name="Helvetica"/>
+                            </buttonCell>
+                            <connections>
+                                <action selector="onPincodeConfirm:" target="-2" id="Nqc-PA-wHt"/>
+                            </connections>
+                        </button>
+                        <textField verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEL-wg-7Pt">
+                            <rect key="frame" x="20" y="105" width="206" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" placeholderString="4 digit" drawsBackground="YES" id="h2e-x0-abu">
+                                <font key="font" size="17" name="Helvetica"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                            <connections>
+                                <outlet property="delegate" destination="-2" id="33A-LQ-dj5"/>
+                            </connections>
+                        </textField>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b1V-wL-AGu" userLabel="Left Computer">
+                            <rect key="frame" x="53" y="140" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="computer_icon" id="GVT-xv-Om0"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AWt-P4-Z9g" userLabel="Right Computer">
+                            <rect key="frame" x="153" y="140" width="40" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="computer_icon" id="MUI-fy-Wu1"/>
+                        </imageView>
+                        <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4q4-7k-RMk">
+                            <rect key="frame" x="108" y="145" width="30" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="transfer_icon" id="7cx-8E-NCX"/>
+                        </imageView>
+                    </subviews>
+                </customView>
+            </subviews>
+            <point key="canvasLocation" x="10" y="344.5"/>
+        </customView>
+    </objects>
+    <resources>
+        <image name="check_icon" width="33" height="33"/>
+        <image name="computer_icon" width="40" height="33"/>
+        <image name="transfer_icon" width="50" height="30"/>
+    </resources>
+</document>
